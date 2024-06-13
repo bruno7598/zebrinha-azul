@@ -1,0 +1,183 @@
+{
+    "São Paulo -> Rio de Janeiro": {
+        "geocoded_waypoints": [
+            {
+                "geocoder_status": "OK",
+                "place_id": "ChIJ7xxOZ6pZzpQRK0-Gu_zWrQA",
+                "types": [
+                    "establishment",
+                    "point_of_interest",
+                    "transit_station"
+                ]
+            },
+            {
+                "geocoder_status": "OK",
+                "place_id": "ChIJuS5dbeCBmQARYOZ-_ZKNxU0",
+                "types": [
+                    "street_address"
+                ]
+            }
+        ],
+        "routes": [
+            {
+                "bounds": {
+                    "northeast": {
+                        "lat": -22.4495722,
+                        "lng": -43.1685157
+                    },
+                    "southwest": {
+                        "lat": -23.5507845,
+                        "lng": -46.6386644
+                    }
+                },
+                "copyrights": "Map data ©2024 Google",
+                "legs": [
+                    {
+                        "distance": {
+                            "text": "446 km",
+                            "value": 445739
+                        },
+                        "duration": {
+                            "text": "5 hours 37 mins",
+                            "value": 20198
+                        },
+                        "duration_in_traffic": {
+                            "text": "6 hours 0 mins",
+                            "value": 21577
+                        },
+                        "end_address": "Av. Alm. Barroso, 472 - Centro, Rio de Janeiro - RJ, 20031-002, Brazil",
+                        "end_location": {
+                            "lat": -22.906858,
+                            "lng": -43.1729361
+                        },
+                        "start_address": "Estação Sé - Se, São Paulo - SP, Brazil",
+                        "start_location": {
+                            "lat": -23.5507845,
+                            "lng": -46.6338611
+                        },
+                        "steps": [
+                            {
+                                "distance": {
+                                    "text": "56 m",
+                                    "value": 56
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 30
+                                },
+                                "end_location": {
+                                    "lat": -23.5505676,
+                                    "lng": -46.6343504
+                                },
+                                "html_instructions": "Head <b>northwest</b> toward <b>Praça da Sé</b>",
+                                "polyline": {
+                                    "points": "jwvnCrds{GA@?@A??@A@CDQn@Mb@"
+                                },
+                                "start_location": {
+                                    "lat": -23.5507845,
+                                    "lng": -46.6338611
+                                },
+                                "travel_mode": "DRIVING"
+                            },
+                            {
+                                "distance": {
+                                    "text": "33 m",
+                                    "value": 33
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 14
+                                },
+                                "end_location": {
+                                    "lat": -23.5508262,
+                                    "lng": -46.6345075
+                                },
+                                "html_instructions": "Turn <b>left</b> onto <b>Praça da Sé</b>",
+                                "maneuver": "turn-left",
+                                "polyline": {
+                                    "points": "`vvnCtgs{Gr@^"
+                                },
+                                "start_location": {
+                                    "lat": -23.5505676,
+                                    "lng": -46.6343504
+                                },
+                                "travel_mode": "DRIVING"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.2 km",
+                                    "value": 226
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 46
+                                },
+                                "end_location": {
+                                    "lat": -23.5501818,
+                                    "lng": -46.6365974
+                                },
+                                "html_instructions": "Turn <b>right</b> after Banco Bradesco - Agência 0500 (on the right)",
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "twvnCths{Gu@vC_AdEEPENAH@F?D?H"
+                                },
+                                "start_location": {
+                                    "lat": -23.5508262,
+                                    "lng": -46.6345075
+                                },
+                                "travel_mode": "DRIVING"
+                            },
+                            {
+                                "distance": {
+                                    "text": "51 m",
+                                    "value": 51
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 26
+                                },
+                                "end_location": {
+                                    "lat": -23.5505983,
+                                    "lng": -46.6368008
+                                },
+                                "html_instructions": "<b>R. Sen. Feijó</b> turns <b>left</b> and becomes <b>R. Cristóvão Colombo</b>",
+                                "polyline": {
+                                    "points": "rsvnCvus{GrAf@"
+                                },
+                                "start_location": {
+                                    "lat": -23.5501818,
+                                    "lng": -46.6365974
+                                },
+                                "travel_mode": "DRIVING"
+                            },
+                            {
+                                "distance": {
+                                    "text": "0.3 km",
+                                    "value": 286
+                                },
+                                "duration": {
+                                    "text": "1 min",
+                                    "value": 56
+                                },
+                                "end_location": {
+                                    "lat": -23.5489017,
+                                    "lng": -46.6387136
+                                },
+                                "html_instructions": "Turn <b>right</b> onto <b>R. Riachuelo</b>",
+                                "maneuver": "turn-right",
+                                "polyline": {
+                                    "points": "fvvnC~vs{GaAnCYr@MZGNEFIJOL]Xi@`@a@XMFC@K@IBK@I?G@Q@"
+                                },
+                                "start_location": {
+                                    "lat": -23.5505983,
+                                    "lng": -46.6368008
+                                },
+                                "travel_mode": "DRIVING"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
