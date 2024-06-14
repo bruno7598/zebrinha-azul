@@ -18,20 +18,9 @@ class GetRaw(Resource):
         except ValueError as e:
             return {"message": str(e)}, 400
 
-        execution_date_clean = execution_date.replace('-', '').replace(':', '').replace(' ', '')
-
         temp_data, traffic_data = self.raw.run_routines(execution_date)
 
         if "Erro" not in temp_data.values() and "message" not in traffic_data.values():
-            temp_filename = f'/home/bruno7598/project/zebrinha-azul/v1/resource/json_raw/temp_data_{execution_date_clean}.json'
-            traffic_filename = f'/home/bruno7598/project/zebrinha-azul/v1/resource/json_raw/traffic_data_{execution_date_clean}.json'
-
-            with open(temp_filename, 'w') as f:
-                json.dump(temp_data, f)
-
-            with open(traffic_filename, 'w') as f:
-                json.dump(traffic_data, f)
-
             return {"message": "JSONs salvos com sucesso"}, 200
         else:
             return {

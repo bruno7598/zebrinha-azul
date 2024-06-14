@@ -1,7 +1,11 @@
 dev:
-  database_url: "sqlite:///./test.db"
-  secret_key: "dev_secret_key"
+  api_weather: https://api.openweathermap.org/data/2.5/weather
+  api_route: https://maps.googleapis.com/maps/api/directions/json
+  tables_weather: weather_data
+  tables_route: routes_data
 
 prod:
-  database_url: "postgresql://user:password@localhost/prod_db"
-  secret_key: "prod_secret_key"
+  api_weather: https://api.openweathermap.org/data/2.5/weather
+  api_route: https://maps.googleapis.com/maps/api/directions/json
+  tables_weather: weather_data
+  tables_route: routes_data

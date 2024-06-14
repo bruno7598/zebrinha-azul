@@ -1,5 +1,17 @@
 
 def translate_directions_data(data):
+    """
+    Translates the Google Maps Directions API response data into a more readable format.
+
+    Parameters:
+    data (dict): The Google Maps Directions API response data.
+
+    Returns:
+    dict: A dictionary containing the translated data. If no routes are found, returns a message indicating this.
+
+    The function iterates through the provided data, extracts relevant information, and constructs a new dictionary
+    with the translated data. It handles cases where no routes are found and returns an appropriate message.
+    """
     if not data:
         return {"message": "Nenhuma rota encontrada"}
 

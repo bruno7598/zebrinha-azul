@@ -1,11 +1,10 @@
-import json
 from flask import request
 from flask_restful import Resource
 
 from v1.model.execution_date import ExecutionDate
 from v1.routines.application import Application
 
-class GetRaw(Resource):
+class GetApplication(Resource):
     def __init__(self) -> None:
         self.application = Application()
 
@@ -20,13 +19,10 @@ class GetRaw(Resource):
 
         execution_date_clean = execution_date.replace('-', '').replace(':', '').replace(' ', '')
 
-        result = self.application(execution_date_clean)
-
-        if "Erro" not in result and "message" not in result:
-
-            return {"message": "JSONs salvos com sucesso"}, 200
-        else:
-            return {
-                "message": "Falha ao obter os dados do tempo ou de tráfego",
-                "status_code": 500
-            }, 500
+        try:
+            self.application.routines(execution_date_clean)
+            print("Dados inseridos/atualizados com sucesso no PostgreSQL!")
+        except Exception as e:
+            print(f"Erro ao inserir/atualizar dados no PostgreSQL: {str(e)}")
+        finally:
+            self.application.close_connection()

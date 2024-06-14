@@ -6,10 +6,14 @@ from v1.app import api_bp
 env = os.getenv("MODE_DEPLOY", "dev")
 api_key_temp = os.getenv("API_KEY_TEMP", "")
 api_key_traffic = os.getenv("API_KEY_TRAFFIC", "")
+db_host = os.getenv("DB_HOST", "")
+db_name = os.getenv("DB_NAME", "")
+db_user = os.getenv("DB_USER", "")
+db_password = os.getenv("DB_PASSWORD", "")
 
 settings = Settings()
 
-settings.load(env, api_key_temp, api_key_traffic)
+settings.load(env, api_key_temp, api_key_traffic, db_host, db_name, db_user, db_password)
 
 def create_app():
     app = Flask(__name__)
