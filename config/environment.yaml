@@ -1,0 +1,11 @@
+dev:
+  api_weather: https://api.openweathermap.org/data/2.5/weather
+  api_route: https://maps.googleapis.com/maps/api/directions/json
+  tables_weather: weather_data
+  tables_route: routes_data
+
+prod:
+  api_weather: https://api.openweathermap.org/data/2.5/weather
+  api_route: https://maps.googleapis.com/maps/api/directions/json
+  tables_weather: weather_data
+  tables_route: routes_data
